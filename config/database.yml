@@ -21,7 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: mysql2
+  adapter: pg
   encoding: utf8
   database: bestsf_production
   pool: 5

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%= csrf_meta_tags %>    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="ZcZL5is8QQQqvxmjybasxJHoBFYlQUWxD2KIbs6DCsc" />
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title><%= yield(:title) %> | Gaming</title>
+  <meta name="description" content="Grape">
+
+  <%= favicon_link_tag 'favicon.png' %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body class="<%= yield(:body_class) %>">
+    <!-- Header Section -->
+    <div class="spn_hol">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+
+    <!-- END PRELOADER -->
+
+   <section id="header">
+      <div class="container">
+        <nav class="navbar">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+
+            <%= image_tag 'print-onto-logo.png', class: 'logo-img', alt: '' %><!-- 
+          <img src="assets/img/print-onto-logo.png" class="logo-img"> -->
+        </a>
+
+        <!-- Links -->
+        <ul class="nav navbar-nav pull-xs-right main-menu desktop-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="why_choose_us.html">why choose us?</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="portfolio_product.html" data-toggle="dropdown" data-hover="dropdown">our works</a>
+            <ul class="dropdown-menu">
+              <li><a href="single_product.html">Canvas</a></li>
+                          <li><a href="single_product.html">Wood</a></li>
+                          <li><a href="single_product.html">Metal</a></li>
+                          <li><a href="single_product.html">Vynil</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="blog_portfolio.html" class="nav-link">blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="customer_dashboard.html" class="nav-link">contact</a>
+          </li>
+          <li class="nav-item nav-active">
+            <a href="index.php" class="nav-link">get started</a>
+          </li>
+        </ul>
+        <div class="cart-link desktop-cart wow bounceInDown">
+          <a href="customer_order.html">
+                        <%= image_tag 'cart-img.png', class: '', alt: '' %>
+              <div class="count-cart">2</div>
+                    </a>
+        </div>
+
+        <!-- mobile menu -->
+        <ul class="nav navbar-nav pull-xs-right mobile-menu">
+          <li class="nav-item mobile-cart">
+            <a href="customer_order.html" class="nav-link"><%= image_tag 'cart-img.png', class: '', alt: '' %><span class="count-cart">2</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="navbarSideButton">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <!-- &#9776; -->
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-side" id="navbarSide">
+          <li class="navbar-side-item">
+           <a href="#" class="side-link top"><</a>
+          </li>
+          <li class="navbar-side-item">
+            <a href="about.html" class="side-link">about</a>
+          </li>
+          <li class="navbar-side-item">
+            <a href="why_choose_us.html" class="side-link">why choose us?</a>
+          </li>
+          <li class="navbar-side-item">
+            <a href="portfolio_product.html" class="side-link" data-toggle="dropdown" data-hover="dropdown">our works</a>
+            <ul class="collapse dropdown-menu">
+            <li><a href="single_product.html">Canvas</a></li>
+                        <li><a href="single_product.html">Wood</a></li>
+                        <li><a href="single_product.html">Metal</a></li>
+                        <li><a href="single_product.html">Vynil</a></li>
+          </ul>
+          </li>
+          <li class="navbar-side-item">
+            <a href="blog_portfolio.html" class="side-link">blog</a>
+          </li>
+          <li class="navbar-side-item">
+            <a href="customer_dashboard.html" class="side-link">contact</a>
+          </li> 
+          <li class="navbar-side-item nav-active">
+            <a href="index.php" class="side-link">get started</a>
+          </li>           
+        </ul>
+        <div class="overlay"></div>
+        <!-- mobile menu -->
+      </nav>
+      </div>
+    </section>

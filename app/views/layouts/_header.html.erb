@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="ZcZL5is8QQQqvxmjybasxJHoBFYlQUWxD2KIbs6DCsc" />
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title><%= yield(:title) %> | Gaming</title>
-  <meta name="description" content="Grape">
+  <title><%= yield(:title) %>PDFZAPIER</title>
+  <meta name="description" content="PDFZAPIER">
 
   <%= favicon_link_tag 'favicon.png' %>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,42 +50,27 @@
         <!-- Links -->
         <ul class="nav navbar-nav pull-xs-right main-menu desktop-menu">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="why_choose_us.html">why choose us?</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="portfolio_product.html" data-toggle="dropdown" data-hover="dropdown">our works</a>
-            <ul class="dropdown-menu">
-              <li><a href="single_product.html">Canvas</a></li>
-                          <li><a href="single_product.html">Wood</a></li>
-                          <li><a href="single_product.html">Metal</a></li>
-                          <li><a href="single_product.html">Vynil</a></li>
-            </ul>
+            <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a href="blog_portfolio.html" class="nav-link">blog</a>
+            <a href="#" class="nav-link">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="customer_dashboard.html" class="nav-link">contact</a>
+            <a href="#" class="nav-link">Blog</a>
           </li>
           <li class="nav-item nav-active">
-            <a href="index.php" class="nav-link">get started</a>
+            <a href="#" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Signup</a>
           </li>
         </ul>
-        <div class="cart-link desktop-cart wow bounceInDown">
-          <a href="customer_order.html">
-                        <%= image_tag 'cart-img.png', class: '', alt: '' %>
-              <div class="count-cart">2</div>
-                    </a>
-        </div>
-
         <!-- mobile menu -->
         <ul class="nav navbar-nav pull-xs-right mobile-menu">
-          <li class="nav-item mobile-cart">
-            <a href="customer_order.html" class="nav-link"><%= image_tag 'cart-img.png', class: '', alt: '' %><span class="count-cart">2</span></a>
-          </li>
+          
           <li class="nav-item">
             <a href="#" class="nav-link" id="navbarSideButton">
               <span class="icon-bar"></span>

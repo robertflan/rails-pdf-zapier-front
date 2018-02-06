@@ -71,16 +71,16 @@ $( document ).on('turbolinks:load',function() {
     	var str = '';
     	switch(index){
     		case 0:
-    			str = 'Canvas';
+    			str = '';
     			break;
     		case 1:
-    			str = '&nbsp;Wood';
+    			str = '';
     			break;    			
     		case 2:
-    			str = 'Metal';
+    			str = '';
     			break;
     		case 3:
-	    		str = '&nbsp;Vynil';
+	    		str = '';
 	    		break;    			
     	}
 

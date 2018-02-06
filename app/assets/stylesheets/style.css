@@ -392,7 +392,7 @@ URL: https://github.com/superbestdev/printontotheme
 		text-align: right;
 	}
 	.footer-logo{
-		width: 75px;
+		width: 275px;
 	}
 
 	.yellow-btn{
@@ -419,7 +419,7 @@ URL: https://github.com/superbestdev/printontotheme
 		text-decoration: none;
 		background: #1abc9c;
 		color: #fff;
-		font-size: 26px;
+		font-size: 18px;
 		font-weight: 600;
 		transition: all linear 0.5s;
 		-moz-transition: all linear 0.5s;
@@ -581,8 +581,11 @@ URL: https://github.com/superbestdev/printontotheme
 		text-align: center;
 
 	}
-	#product-progress .progress-ad{		
-		padding: 0px 56px;
+	#product-progress h1{
+		margin-bottom: 40px;
+
+	}
+	#product-progress .progress-ad{	
 		text-align: center;
 		margin: 50px 0;
 	}	
@@ -601,7 +604,6 @@ URL: https://github.com/superbestdev/printontotheme
 		width: 90px;
 		height: 77px;
 		position: relative;
-		left: 24%;
 	}
 	.animation img:first-child{
 		z-index: 10;	
@@ -679,14 +681,15 @@ URL: https://github.com/superbestdev/printontotheme
 	}
 
 	#ourwork{
-		padding: 120px 0;
+		padding: 50px 0;
 		text-align: center;
 		border-bottom: 1px solid #ebeced;
+		box-shadow: 0 -5px 5px rgba(0, 0, 0, .1);
 	}
 	.ourwork-caption{
 		font-size: 34px;
-		font-family: 'HUBERTJOCHAMSusa-Regular';
-		color: #1abc9c;
+		/*font-family: 'HUBERTJOCHAMSusa-Regular';*/
+		color: #c3011e;
 	}
 	table.gallery-table{
 		border-collapse: initial;
@@ -840,9 +843,7 @@ URL: https://github.com/superbestdev/printontotheme
 		text-align: center;
 		padding: 75px 0;
 	}
-	#feature h4{
-		font-size: 17px;
-		color: #757b7f;
+	#feature h1{
 		margin-bottom: 50px;
 	}
 	#feature img{
@@ -1613,8 +1614,30 @@ URL: https://github.com/superbestdev/printontotheme
 	}
 /* customer order----*/
 
-
-
-
-
+#video{
+	padding: 30px 20px; 
+}
+#video h1{
+	margin: 30px 10px 50px 10px;
+}
+#membership{
+	padding: 50px 0px;
+	box-shadow: 0 -5px 5px rgba(0, 0, 0, .1);
+}
+#membership h1{
+	margin-bottom: 40px;
+	text-align: center;
+}
+#membership h1, #membership h2, #membership h3, #membership h4,#membership p{
+	text-align: center;
+}
+.list-group li{
+	text-align: center;
+}
+.card-block h2{
+	color: #1abc9c;
+}
+.fusion-text p{
+	color: #2c3e50;
+}
 
